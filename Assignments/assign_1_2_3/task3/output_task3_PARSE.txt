@@ -1,0 +1,18 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN hit)
+          (PP (IN by)
+            (NP (DT a) (NN car))))))
+    (. .)))
+
+nsubjpass(hit-4, I-1)
+aux(hit-4, have-2)
+auxpass(hit-4, been-3)
+root(ROOT-0, hit-4)
+case(car-7, by-5)
+det(car-7, a-6)
+nmod:by(hit-4, car-7)
+
