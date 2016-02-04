@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (DT A) (NN pointer))
+    (VP (VBZ points)
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN address))
+          (PP (IN of)
+            (NP (DT a) (NN function))))))
+    (. .)))
+
+det(pointer-2, A-1)
+nsubj(points-3, pointer-2)
+root(ROOT-0, points-3)
+case(address-6, to-4)
+det(address-6, the-5)
+nmod:to(points-3, address-6)
+case(function-9, of-7)
+det(function-9, a-8)
+nmod:of(address-6, function-9)
+
+(ROOT
+  (S
+    (NP (DT A) (NN pointer))
+    (VP (VBZ contains)
+      (NP
+        (NP (DT the) (NN address))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN function))
+            (PP (IN in)
+              (NP (NN memory)))))))
+    (. .)))
+
+det(pointer-2, A-1)
+nsubj(contains-3, pointer-2)
+root(ROOT-0, contains-3)
+det(address-5, the-4)
+dobj(contains-3, address-5)
+case(function-8, of-6)
+det(function-8, the-7)
+nmod:of(address-5, function-8)
+case(memory-10, in-9)
+nmod:in(function-8, memory-10)
+
